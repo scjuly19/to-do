@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+*,
+*::after,
+*::before {
+  font-family: "Josefin Sans", sans-serif;
+}
+button {
+  cursor: pointer;
+}
+.action-btn {
+  background: none;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.page-container {
+  min-height: 100vh;
+  position: relative;
+}
+.profile-wrapper,
+.todo-wrapper,
+.homepage-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homepage-wrapper {
+  flex-direction: column;
+}
+.todo-wrapper {
+  flex-direction: column;
+}
+.todo-list-item {
+  list-style: none;
+  align-items: center;
+  display: flex;
+  position: relative;
+  min-width: 500px;
+}
+.avatar-btn {
+  height: 68px;
+  width: 68px;
+  border-radius: 34px;
+  border: 2px solid;
+  padding: 0;
+  background: none;
+  align-items: center;
+  cursor: pointer;
+}
+.filters-wrapper:hover > .filter-btn:hover {
+  color: grey;
+}
+.active-filter {
+  color: #3a7bfd;
+}
+.filter-btn {
+  background: none;
+  font-weight: 500;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.inline {
+  display: inline;
+}
+.todo-list-wrapper {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.todo-list-wrapper p {
+  max-width: 500px;
+  text-overflow: clip;
+}
+.check-btn {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  outline: 0 !important;
+  background: transparent;
+}
+.add-todo-input {
+  padding: 10px 20px;
+  width: 300px;
+}
+.add-btn {
+  padding: 10px 20px;
+  margin-left: 5px;
+}
+.remove-todo-btn {
+  background: transparent;
+  padding: 5px 10px;
+  border: none;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration-line: line-through;
+}
+.add-todo-wrapper {
+  margin-top: 20px;
+}
+.todo-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+}
+.switch-btn {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  padding: 10px;
+}
+.username-input {
+  padding: 10px 20px;
+  width: 200px;
+  margin-left: 10px;
+}
+.username-btn {
+  margin-left: 10px;
+}
+.modal{
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.close-modal-btn{
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 22px;
+}
